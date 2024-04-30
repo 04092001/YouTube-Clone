@@ -3,22 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>YouTube Clone</title>
   </head>
   <body>
     <div>
-      <section>
-        <article>
-          <a href="#"
-            ><img src="http://unsplash.it/250/150?gravity=center" alt=""
+      <section
+        class="grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-1 p-1 my-0 mx-1 border-t-[4px] border- border-t-ytGrey first:border-t-0"
+      >
+        <article class="flex flex-col">
+          <a
+            class="relative flex before:content-[attr(data-duration)] before:absolute before:bg-ytBlack before:text-white before:right-1 before:bottom-1 before:px-1 before:py before:rounded before:text-sm"
+            href="#"
+            data-duration="12:24"
+            ><img
+              class="w-full h-full min-w-64 min-h-36 bg-ytGreyTwo"
+              src="http://unsplash.it/250/150?gravity=center"
+              alt=""
           /></a>
-          <div>
+          <div class="flex items-start mt-3">
             <a href="#"
-              ><img src="http://unsplash.it/36/36?gravity=center" alt=""
+              ><img
+                class="mr-3 rounded-full w-9 h-9 bg-ytGreyTwo"
+                src="http://unsplash.it/36/36?gravity=center"
+                alt=""
             /></a>
-            <div>
-              <a href="#">Video Title</a><a href="#">Channel Name</a>
-              <div><span>12k Views</span>·<span>1 Week Ago</span></div>
+            <div class="flex flex-col">
+              <a class="text-base text-black font-bold" href="#">Video Title</a
+              ><a
+                class="text-ytGreyThree hover:text-ytBlackTwo transition-all"
+                href="#"
+                >Channel Name</a
+              >
+              <div class="text-ytGreyThree gap-x-4">
+                <span class="mr-1">12k Views</span>·<span class="ml-1"
+                  >1 Week Ago</span
+                >
+              </div>
             </div>
           </div>
         </article>
